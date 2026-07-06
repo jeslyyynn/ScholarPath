@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScholarPath | Scholarship Assistant</title>
+    <meta name="description" content="Chat with ScholarPath to discover scholarship opportunities that may match your profile." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a href="index.html" class="brand" aria-label="ScholarPath home">
+          <img src="assets/logo.png" alt="ScholarPath logo" />
+          <span>ScholarPath</span>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="scholarships.html">Explore Scholarships</a>
+          <a href="assistant.html" class="active">Scholarship Assistant</a>
+          <a href="tips.html">Preparation Tips</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container page-intro reveal">
+          <p class="eyebrow">Scholarship Assistant</p>
+          <h1>Before you begin</h1>
+          <p>Gather a few key details so ScholarPath can suggest more relevant possible matches.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container assistant-layout">
+          <div class="assistant-guide reveal">
+            <div class="section-heading">
+              <p class="eyebrow">Before You Begin</p>
+              <h2>Checklist</h2>
+            </div>
+            <ul class="checklist-list">
+              <li>Know your approximate GPA range</li>
+              <li>Think about your achievements</li>
+              <li>Consider your career interests</li>
+            </ul>
+            <div class="notice-card" role="note">
+              <p>Suggestions are possible matches, not guaranteed eligibility.</p>
+            </div>
+          </div>
+
+          <div class="assistant-panel reveal" aria-label="ScholarPath assistant placeholder">
+            <div class="assistant-panel-header">
+              <div class="assistant-avatar">S</div>
+              <div>
+                <h2>ScholarPath Assistant</h2>
+                <p class="status-pill">Preview chat flow</p>
+              </div>
+            </div>
+            <div class="assistant-placeholder-chat" role="region" aria-label="Assistant preview">
+              <div class="chat-bubble incoming">
+                <p>Find possible matches.</p>
+              </div>
+              <div class="chat-bubble outgoing">
+                <p>Check scholarship details.</p>
+              </div>
+              <div class="chat-bubble incoming">
+                <p>Improve my profile.</p>
+              </div>
+            </div>
+            <div class="botpress-note">
+              <!-- Botpress webchat will be added here later -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="brand brand-footer" aria-label="ScholarPath home">
+            <img src="assets/logo.png" alt="ScholarPath logo" />
+            <span>ScholarPath</span>
+          </a>
+          <p>Helping RP students explore possible opportunities.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Explore</h3>
+          <a href="scholarships.html">Scholarships</a>
+          <a href="assistant.html">Assistant</a>
+          <a href="tips.html">Preparation Tips</a>
+        </div>
+        <div class="footer-links">
+          <h3>Learn</h3>
+          <a href="index.html">Home</a>
+          <a href="how-it-works.html">How It Works</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Recommendations are possible matches only. Verify details through official sources.</p>
+        <p>© 2026 ScholarPath</p>
+      </div>
+    </footer>
+
+    <!-- Insert Botpress Webchat embed scripts here later -->
+    <script src="script.js"></script>
+  </body>
+</html>
