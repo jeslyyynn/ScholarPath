@@ -447,6 +447,15 @@ button {
   margin-bottom: 0.5rem;
 }
 
+.journey-section .eyebrow {
+  font-size: clamp(1.05rem, 1.2vw, 1.25rem);
+}
+
+.assistant-showcase .eyebrow,
+.page-hero .eyebrow {
+  font-size: 1rem;
+}
+
 h1,
 h2,
 h3 {
@@ -642,6 +651,10 @@ p {
 
 .telegram-promo-copy {
   max-width: 680px;
+}
+
+.telegram-promo-copy .eyebrow {
+  font-size: 1rem;
 }
 
 .telegram-promo-copy h2 {
