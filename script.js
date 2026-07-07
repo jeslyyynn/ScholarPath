@@ -116,3 +116,5 @@ if (activeLink) {
   document.querySelectorAll('.site-nav a.active').forEach((link) => link.classList.remove('active'));
   activeLink.classList.add('active');
 }
+
+/* Chat opens in a new tab; no overlay logic required */

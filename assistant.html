@@ -41,7 +41,7 @@
         <div class="container assistant-layout">
           <div class="assistant-guide reveal">
             <div class="section-heading">
-              <p class="eyebrow">Before You Begin</p>
+              
               <h2>Checklist</h2>
             </div>
             <ul class="checklist-list">
@@ -74,8 +74,27 @@
               </div>
             </div>
             <div class="botpress-note">
-              <!-- Botpress webchat will be added here later -->
+              <a id="bp-open" class="chat-cta" href="https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/07/04/16/20260704162012-ORRNSP4B.json" target="_blank" rel="noopener noreferrer" aria-label="Open the ScholarPath assistant in a new tab">Go to the ScholarPath assistant</a>
+              <p class="small-note">This opens in a new tab for a full chat experience.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section telegram-strip-section reveal">
+        <div class="container telegram-strip">
+          <div class="telegram-strip-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M3.89 12.97l15.26-5.61c.71-.26 1.37.17 1.18.94l-2.15 10.12c-.17.79-.74 1.02-1.41.63l-3.9-2.87-1.88 1.81c-.21.21-.39.39-.8.39l.29-4.15 7.56-6.87c.33-.3-.07-.47-.52-.18L7.7 12.1l-4.13-1.29c-.9-.28-.92.34-.17.52z"/>
+            </svg>
+          </div>
+          <div class="telegram-strip-copy">
+            <p class="eyebrow">TELEGRAM COMPANION</p>
+            <h2>Quick Help on Telegram</h2>
+            <p>Get quick scholarship FAQs, application reminders and access to the full ScholarPath Assistant.</p>
+          </div>
+          <div class="telegram-strip-action">
+            <a class="btn btn-primary btn-telegram-strip" href="https://t.me/YOUR_BOT_USERNAME" target="_blank" rel="noopener noreferrer">Open Telegram Quick Help</a>
           </div>
         </div>
       </section>
@@ -83,32 +102,38 @@
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <div class="footer-brand">
-          <a href="index.html" class="brand brand-footer" aria-label="ScholarPath home">
-            <img src="assets/logo.png" alt="ScholarPath logo" />
-            <span>ScholarPath</span>
-          </a>
-          <p>Helping RP students explore possible opportunities.</p>
+        <div class="footer-column footer-brand-col">
+          <h3>ScholarPath</h3>
+          <p>AI scholarship discovery support for RP students.</p>
+          <p>Helping students find scholarships, bursaries and preparation guidance more easily.</p>
         </div>
-        <div class="footer-links">
-          <h3>Explore</h3>
-          <a href="scholarships.html">Scholarships</a>
-          <a href="assistant.html">Assistant</a>
-          <a href="tips.html">Preparation Tips</a>
+        <div class="footer-column footer-links-col">
+          <h3>What You Can Do</h3>
+          <ul>
+            <li>Discover possible matches</li>
+            <li>Check scholarship details</li>
+            <li>Improve your profile</li>
+            <li>Prepare for applications</li>
+          </ul>
         </div>
-        <div class="footer-links">
-          <h3>Learn</h3>
-          <a href="index.html">Home</a>
-          <a href="how-it-works.html">How It Works</a>
+        <div class="footer-column footer-access-col">
+          <h3>Quick Access</h3>
+          <ul>
+            <li><a href="assistant.html">Scholarship Assistant</a></li>
+            <li><a href="https://t.me/YOUR_BOT_USERNAME" target="_blank" rel="noopener noreferrer">Telegram Quick Help</a></li>
+            <li>Email recommendations</li>
+            <li>Official sources</li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>Recommendations are possible matches only. Verify details through official sources.</p>
-        <p>© 2026 ScholarPath</p>
+        <p>ScholarPath provides guidance and possible matches only. Always verify official scholarship criteria, benefits and application periods before applying.</p>
+        <p>© 2026 ScholarPath. Built for Republic Polytechnic students.</p>
       </div>
     </footer>
 
     <!-- Insert Botpress Webchat embed scripts here later -->
     <script src="script.js"></script>
+    <!-- Botpress chat link is embedded as a CTA in the assistant panel -->
   </body>
 </html>

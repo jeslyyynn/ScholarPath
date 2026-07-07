@@ -192,9 +192,24 @@ button {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 2rem;
+  /* Give more horizontal room to the left (text) column so headings don't wrap too tightly */
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 5rem;
   align-items: center;
+}
+
+.hero-copy {
+  padding-right: 1rem;
+  max-width: 720px;
+}
+
+.hero-copy h1 {
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+}
+
+.hero-copy p {
+  max-width: 700px;
 }
 
 .hero-copy h1 {
@@ -214,6 +229,29 @@ button {
   flex-wrap: wrap;
   gap: 1rem;
   margin: 1.5rem 0;
+}
+
+.hero-flow-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin: 1.5rem 0;
+}
+
+.flow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  border-radius: 999px;
+  background: rgba(79, 141, 247, 0.14);
+  color: var(--navy);
+  font-size: 0.95rem;
+}
+
+.flow-pill img {
+  width: 24px;
+  height: 24px;
 }
 
 .trust-row {
@@ -538,6 +576,243 @@ p {
   box-shadow: var(--shadow);
 }
 
+.telegram-promo-section {
+  padding: 3.5rem 0;
+}
+
+.telegram-promo-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.telegram-promo-copy {
+  max-width: 680px;
+}
+
+.telegram-promo-copy h2 {
+  margin-top: 0.75rem;
+  max-width: 680px;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 1.05;
+}
+
+.telegram-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.75rem 0 2rem;
+}
+
+.telegram-features span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background: rgba(46, 165, 224, 0.1);
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.btn-telegram {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.95rem 1.5rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--blue), var(--secondary-blue));
+  color: var(--white);
+  box-shadow: 0 16px 40px rgba(11, 35, 69, 0.12);
+}
+
+.btn-telegram svg,
+.btn-telegram-small svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.telegram-promo-panel {
+  position: relative;
+}
+
+.telegram-card {
+  position: relative;
+  padding: 2rem;
+  border-radius: 32px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(234,243,255,0.9));
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.telegram-card::before {
+  content: "";
+  position: absolute;
+  top: -26px;
+  right: -26px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(46, 165, 224, 0.16);
+}
+
+.telegram-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(46, 165, 224, 0.12);
+  color: var(--blue);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.telegram-card h3 {
+  margin: 0 0 0.8rem;
+  color: var(--navy);
+}
+
+.telegram-card p {
+  margin: 0 0 1.6rem;
+  color: var(--muted);
+  max-width: 520px;
+}
+
+.btn-telegram-small {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 999px;
+  background: var(--light-blue);
+  color: var(--navy);
+  min-width: 190px;
+}
+
+.telegram-strip-section {
+  padding: 1.5rem 0 4.5rem;
+}
+
+.telegram-strip {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  border-radius: 26px;
+  background: #f8fbff;
+  box-shadow: 0 18px 38px rgba(11, 35, 69, 0.07);
+  border-left: 4px solid var(--gold);
+}
+
+.telegram-strip-icon {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  background: rgba(46, 165, 224, 0.15);
+  color: var(--blue);
+}
+
+.telegram-strip-icon svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: currentColor;
+}
+
+.telegram-strip-copy h2 {
+  margin: 0.45rem 0 0.65rem;
+  color: var(--navy);
+  font-size: clamp(1.45rem, 2vw, 1.85rem);
+}
+
+.telegram-strip-copy p {
+  margin: 0;
+  color: rgba(14, 38, 72, 0.9);
+  max-width: 640px;
+}
+
+.telegram-strip-action {
+  justify-self: end;
+}
+
+.btn-telegram-strip {
+  min-width: 210px;
+  padding: 0.95rem 1.4rem;
+}
+
+@media (max-width: 1440px) {
+  .telegram-promo-shell {
+    gap: 1.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .telegram-promo-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .telegram-promo-panel {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .telegram-card {
+    padding: 1.6rem;
+  }
+
+  .telegram-card::before {
+    width: 130px;
+    height: 130px;
+    top: -18px;
+    right: -18px;
+  }
+
+  .telegram-strip {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 1.4rem 1.2rem;
+  }
+
+  .telegram-strip-icon {
+    justify-self: center;
+  }
+
+  .telegram-strip-action {
+    justify-self: center;
+  }
+
+  .btn-telegram-strip {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 575px) {
+  .telegram-features {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .telegram-card,
+  .telegram-access-card {
+    border-radius: 24px;
+    padding: 1.35rem;
+  }
+
+  .btn-telegram,
+  .btn-telegram-small {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* Timeline */
 .timeline-shell {
   position: relative;
@@ -742,6 +1017,70 @@ p {
   font-weight: 600;
 }
 
+/* Botpress chat widget styles */
+.chat-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: linear-gradient(135deg, var(--blue), var(--secondary-blue));
+  color: var(--white);
+  padding: 0.85rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 14px 36px rgba(11,35,69,0.18);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.chat-iframe-overlay {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(11,35,69,0.45);
+  z-index: 1250;
+}
+
+.chat-iframe-shell {
+  width: min(92%, 920px);
+  max-width: 920px;
+  height: min(85vh, 820px);
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: 0 22px 60px rgba(11,35,69,0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+.chat-iframe-shell iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.chat-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(11,35,69,0.08);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .chat-iframe-shell { width: 100%; height: 78vh; border-radius: 8px; }
+  .chat-cta { width: 100%; font-size: 0.98rem; padding: 0.8rem 1rem; border-radius: 10px; }
+}
+
+.botpress-note { margin-top: 1.25rem; }
+.botpress-note .small-note { margin: 0.5rem 0 0; color: var(--muted); font-size: 0.95rem; }
+
 /* Preparation tips */
 .accordion-stack {
   display: grid;
@@ -845,6 +1184,23 @@ p {
   align-items: center;
 }
 
+.hero-media {
+  display: grid;
+  grid-template-columns: minmax(300px, 1.2fr) minmax(280px, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+
+
+.hero-side-illustration img {
+  width: 100%;
+  max-width: 440px;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  background: rgba(255,255,255,0.9);
+}
+
 .hero-image-card,
 .image-frame {
   position: relative;
@@ -855,8 +1211,8 @@ p {
 }
 
 .hero-image-card {
-  width: min(100%, 460px);
-  padding: 1rem;
+  width: min(100%, 760px);
+  padding: 1rem 1.4rem;
 }
 
 .hero-image-card img,
@@ -868,7 +1224,7 @@ p {
 }
 
 .hero-image-card img {
-  min-height: 420px;
+  min-height: 520px;
 }
 
 .hero-orb {
@@ -907,10 +1263,20 @@ p {
 
 .split-hero {
   display: grid;
-  grid-template-columns: 1fr 0.9fr;
-  gap: 1.4rem;
-  align-items: center;
-}
+   grid-template-columns: 1.5fr 0.5fr;
+   gap: 2.4rem;
+   align-items: center;
+ }
+
+ .split-hero .hero-copy {
+   max-width: 740px;
+   padding-right: 1rem;
+ }
+
+ .split-hero .hero-copy h1 {
+   max-width: 720px;
+   line-height: 1.05;
+ }
 
 .page-copy h1 {
   max-width: 600px;
@@ -1051,35 +1417,73 @@ p {
 
 /* Footer */
 .site-footer {
-  padding: 2rem 0;
+  padding: 3.5rem 0 2.5rem;
   background: var(--navy);
   color: var(--white);
 }
 
 .footer-content {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: 1.2fr 0.8fr 1fr;
+  gap: 2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: start;
 }
 
-.brand-footer {
+.footer-column h3 {
+  margin-bottom: 1rem;
   color: var(--white);
 }
 
-.footer-links {
+.footer-column p,
+.footer-column li,
+.footer-column a {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+}
+
+.footer-column ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.footer-column li {
+  margin: 0;
+}
+
+.footer-column a {
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: var(--secondary-blue);
+}
+
+.footer-bottom {
   display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.footer-links a {
-  color: rgba(255,255,255,0.8);
+.footer-bottom p {
+  margin: 0;
 }
 
-.footer-note p {
-  color: rgba(255,255,255,0.8);
-  margin: 0 0 0.5rem;
+@media (max-width: 900px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 /* Responsive breakpoints */
@@ -1210,13 +1614,15 @@ p {
 .hero-grid,
 .split-hero {
   display: grid;
-  grid-template-columns: 1.05fr minmax(380px, 0.95fr);
-  gap: 2rem;
+  grid-template-columns: 1fr minmax(760px, 1.4fr);
+  gap: 5rem;
   align-items: center;
 }
 
 .hero-image-card {
   position: relative;
+  width: min(100%, 760px);
+  height: 520px;
   border-radius: 32px;
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -1226,7 +1632,6 @@ p {
 .hero-image-card img {
   width: 100%;
   height: 100%;
-  min-height: 460px;
   object-fit: cover;
 }
 
@@ -1540,11 +1945,13 @@ p {
 }
 
 .footer-bottom {
+  grid-column: 1 / -1;
   margin-top: 1.6rem;
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
-  color: rgba(255, 255, 255, 0.82);
+  /* color: rgba(255, 255, 255, 0.82); */
+  color: rgb(94, 114, 140);
   font-size: 0.95rem;
 }
 
