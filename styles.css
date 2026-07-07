@@ -452,7 +452,8 @@ button {
 }
 
 .assistant-showcase .eyebrow,
-.page-hero .eyebrow {
+.page-hero .eyebrow,
+.pathway-section .eyebrow {
   font-size: 1rem;
 }
 
