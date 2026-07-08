@@ -324,6 +324,25 @@ button {
   justify-content: center;
 }
 
+/* Assistant showcase: place copy on the left and video preview on the right */
+.assistant-showcase {
+  display: grid;
+  grid-template-columns: 1fr minmax(420px, 680px);
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .assistant-showcase {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .assistant-preview-card {
+    width: 100%;
+  }
+}
+
 .assistant-preview-card {
   width: min(100%, 680px);
   padding: 1.4rem;
