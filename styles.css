@@ -327,7 +327,7 @@ button {
 /* Assistant showcase: place copy on the left and video preview on the right */
 .assistant-showcase {
   display: grid;
-  grid-template-columns: 1fr minmax(420px, 680px);
+  grid-template-columns: 1fr minmax(520px, 920px);
   gap: 2.5rem;
   align-items: center;
 }
@@ -344,8 +344,8 @@ button {
 }
 
 .assistant-preview-card {
-  width: min(100%, 680px);
-  padding: 1.4rem;
+  width: min(100%, 920px);
+  padding: 0.8rem;
   border-radius: 28px;
   background: linear-gradient(135deg, var(--navy), var(--blue));
   color: var(--white);
