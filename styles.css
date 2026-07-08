@@ -325,7 +325,7 @@ button {
 }
 
 .assistant-preview-card {
-  width: min(100%, 430px);
+  width: min(100%, 680px);
   padding: 1.4rem;
   border-radius: 28px;
   background: linear-gradient(135deg, var(--navy), var(--blue));
@@ -875,7 +875,7 @@ p {
 
   .btn-telegram,
   .btn-telegram-small {
-    width: 100%;
+   100%;
     justify-content: center;
   }
 }
