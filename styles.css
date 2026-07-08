@@ -894,7 +894,7 @@ p {
 
   .btn-telegram,
   .btn-telegram-small {
-   100%;
+    width: 100%;
     justify-content: center;
   }
 }
